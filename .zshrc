@@ -10,13 +10,13 @@ if [[ -f "/opt/homebrew/bin/brew" ]] then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# Set Zinit
+# Set Zinit - zsh plugin manager
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
 
-# Powerlevel10k
+# Powerlevel10k - prompt
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # zsh plugins
@@ -66,3 +66,6 @@ eval "$(fzf --zsh)"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
+
+# to sign commits with gpg
+export GPG_TTY=$TTY
