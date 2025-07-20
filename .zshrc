@@ -69,3 +69,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 # to sign commits with gpg
 export GPG_TTY=$TTY
+
+# nix-rebuild https://github.com/nix-darwin/nix-darwin/issues/177
+export PATH=/run/current-system/sw/bin:$PATH

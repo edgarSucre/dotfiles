@@ -13,7 +13,7 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
-        [ pkgs.vim
+        [ pkgs.neovim
         ];
 
       # Necessary for using flakes on this system.
@@ -31,6 +31,8 @@
 
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
+
+      programs.zsh.enable = true;
     };
   in
   {
