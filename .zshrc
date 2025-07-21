@@ -74,9 +74,11 @@ export XDG_CACHE_HOME="$HOME/.cache"
 # to sign commits with gpg
 export GPG_TTY=$TTY
 
-# nix-rebuild https://github.com/nix-darwin/nix-darwin/issues/177
-export PATH=/run/current-system/sw/bin:$PATH
+# PATH settings
+export GOPATH="$HOME/go"
+export PATH=$GOPATH:$PATH
+export PATH=/run/current-system/sw/bin:$PATH #nix-darwing binaries
+
 
 # AWS CLI
 export AWS_PROFILE="DeUna-BackendTeam"
-

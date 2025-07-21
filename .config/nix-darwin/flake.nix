@@ -24,6 +24,9 @@
           pkgs.mkalias # used to setup alias in the Application folder
           pkgs.stow  # manage symlinks for dotfiles
           pkgs.docker
+          pkgs.go
+          pkgs.delve
+          pkgs.gopls
         ];
 
       homebrew = {

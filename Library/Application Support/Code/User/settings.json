@@ -1,4 +1,16 @@
 {
     "workbench.colorTheme": "Catppuccin Mocha",
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "[go]": {        
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "go.alternateTools": {
+        "gopls": "/run/current-system/sw/bin/gopls",
+        "dlv": "/run/current-system/sw/bin/dlv",
+        "go": "/run/current-system/sw/bin/go"
+    },
 }
