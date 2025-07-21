@@ -13,6 +13,7 @@
     configuration = { pkgs, config, ... }: {
 
       system.primaryUser = "edgar";
+      nixpkgs.config.allowUnfree = true;
 
       environment.systemPackages =
         [ 
@@ -20,14 +21,22 @@
           pkgs.awscli2
           pkgs.brave
           pkgs.tree
+          pkgs.mkalias
         ];
 
       homebrew = {
         enable = true;
+        brews = [
+          "mas" # check appstore application id. mas search WhatsApp
+        ];
         casks = [
           "hammerspoon"
           "the-unarchiver"
         ];
+        masApps = {
+          "WhatsApp" = 310633997; 
+        };
+        onActivation.cleanup = "zap";
       };
 
       fonts.packages = 
