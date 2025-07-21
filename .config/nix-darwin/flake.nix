@@ -35,10 +35,9 @@
         casks = [
           "hammerspoon" # automate taks in macOS
           "the-unarchiver"
-          "docker"
         ];
         masApps = {
-          "WhatsApp" = 310633997; 
+          "WhatsApp" = 310633997;
         };
         onActivation.cleanup = "zap";
       };
