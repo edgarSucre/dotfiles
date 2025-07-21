@@ -21,16 +21,18 @@
           pkgs.awscli2
           pkgs.brave
           pkgs.tree
-          pkgs.mkalias
+          pkgs.mkalias # used to setup alias in the Application folder
+          pkgs.stow  # manage symlinks for dotfiles
         ];
 
       homebrew = {
         enable = true;
         brews = [
           "mas" # check appstore application id. mas search WhatsApp
+          "gpg" # manage gpg keys
         ];
         casks = [
-          "hammerspoon"
+          "hammerspoon" # automate taks in macOS
           "the-unarchiver"
         ];
         masApps = {
