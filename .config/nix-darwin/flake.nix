@@ -11,13 +11,24 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, }:
   let
     configuration = { pkgs, config, ... }: {
-      # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
+
+      system.primaryUser = "edgar";
+
       environment.systemPackages =
         [ 
           pkgs.neovim
           pkgs.awscli2
+          pkgs.brave
+          pkgs.tree
         ];
+
+      homebrew = {
+        enable = true;
+        casks = [
+          "hammerspoon"
+          "the-unarchiver"
+        ];
+      };
 
       fonts.packages = 
         [
@@ -65,7 +76,7 @@
   in
   {
     # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#simple
+    # $ darwin-rebuild build --flake .#empro
     darwinConfigurations."empro" = nix-darwin.lib.darwinSystem {
       modules = [ 
         configuration
