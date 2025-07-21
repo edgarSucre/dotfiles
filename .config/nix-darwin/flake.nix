@@ -30,10 +30,12 @@
         brews = [
           "mas" # check appstore application id. mas search WhatsApp
           "gpg" # manage gpg keys
+          "fzf" # fuzzy finder on the command line + other stuff
         ];
         casks = [
           "hammerspoon" # automate taks in macOS
           "the-unarchiver"
+          "docker"
         ];
         masApps = {
           "WhatsApp" = 310633997; 

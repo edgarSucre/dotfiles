@@ -25,6 +25,9 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
+# Docker completions
+FPATH="$HOME/.docker/completions:$FPATH"
+
 # Load completions
 autoload -Uz compinit && compinit
 
@@ -58,7 +61,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color'
-alias nixswithc='sudo darwin-rebuild switch --flake ~/.config/nix-darwin#empro'
+alias nixs='sudo darwin-rebuild switch --flake ~/.config/nix-darwin#empro'
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -73,3 +76,7 @@ export GPG_TTY=$TTY
 
 # nix-rebuild https://github.com/nix-darwin/nix-darwin/issues/177
 export PATH=/run/current-system/sw/bin:$PATH
+
+# AWS CLI
+export AWS_PROFILE="DeUna-BackendTeam"
+
