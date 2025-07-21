@@ -58,6 +58,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color'
+alias nixswithc='sudo darwin-rebuild switch --flake ~/.config/nix-darwin#empro'
 
 # Shell integrations
 eval "$(fzf --zsh)"
