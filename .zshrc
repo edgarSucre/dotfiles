@@ -62,6 +62,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias nixs='sudo darwin-rebuild switch --flake ~/.config/nix-darwin#empro'
+alias gcm='git-credential-manager'
 
 # Shell integrations
 eval "$(fzf --zsh)"

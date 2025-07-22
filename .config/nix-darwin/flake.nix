@@ -24,9 +24,21 @@
           pkgs.mkalias # used to setup alias in the Application folder
           pkgs.stow  # manage symlinks for dotfiles
           pkgs.docker
+          pkgs.git-credential-manager
+
+          # herramientas de GO
           pkgs.go
           pkgs.delve
           pkgs.gopls
+          pkgs.sonar-scanner-cli
+          
+          pkgs.go-mockery
+          pkgs.mockgen
+
+          pkgs.goose
+          # fin herramientas de GO
+          
+
         ];
 
       homebrew = {
@@ -35,10 +47,12 @@
           "mas" # check appstore application id. mas search WhatsApp
           "gpg" # manage gpg keys
           "fzf" # fuzzy finder on the command line + other stuff
+          "golangci-lint"
         ];
         casks = [
           "hammerspoon" # automate taks in macOS
           "the-unarchiver"
+          "notion"
         ];
         masApps = {
           "WhatsApp" = 310633997;
