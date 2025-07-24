@@ -67,7 +67,7 @@ alias gcm='git-credential-manager'
 # Shell integrations
 eval "$(fzf --zsh)"
 
-# XDG settings
+# XDG setting
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -83,3 +83,7 @@ export PATH=/run/current-system/sw/bin:$PATH #nix-darwing binaries
 
 # AWS CLI
 export AWS_PROFILE="DeUna-BackendTeam"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

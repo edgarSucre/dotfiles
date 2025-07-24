@@ -48,6 +48,8 @@
           "gpg" # manage gpg keys
           "fzf" # fuzzy finder on the command line + other stuff
           "golangci-lint"
+          "aws-sam-cli"
+          "nvm"
         ];
         casks = [
           "hammerspoon" # automate taks in macOS
