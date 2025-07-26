@@ -25,6 +25,7 @@
           pkgs.stow  # manage symlinks for dotfiles
           pkgs.docker
           pkgs.git-credential-manager
+          pkgs.pgcli
 
           # herramientas de GO
           pkgs.go
