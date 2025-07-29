@@ -26,6 +26,7 @@
           pkgs.docker
           pkgs.git-credential-manager
           pkgs.pgcli
+          pkgs.dbeaver-bin
 
           # herramientas de GO
           pkgs.go
@@ -52,6 +53,7 @@
           "aws-sam-cli"
           "nvm"
           "gum"
+          "typescript"
         ];
         casks = [
           "hammerspoon" # automate taks in macOS
