@@ -51,6 +51,7 @@
           "golangci-lint"
           "aws-sam-cli"
           "nvm"
+          "gum"
         ];
         casks = [
           "hammerspoon" # automate taks in macOS

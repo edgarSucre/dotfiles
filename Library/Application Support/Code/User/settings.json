@@ -14,4 +14,7 @@
         "dlv": "/run/current-system/sw/bin/dlv",
         "go": "/run/current-system/sw/bin/go"
     },
+    "git.openRepositoryInParentFolders": "always",
+    "explorer.confirmDelete": false,
+    "aws.telemetry": false,
 }
