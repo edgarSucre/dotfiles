@@ -16,5 +16,12 @@
     },
     "git.openRepositoryInParentFolders": "always",
     "explorer.confirmDelete": false,
-    "aws.telemetry": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": true
+    }
 }

@@ -27,6 +27,7 @@
           pkgs.git-credential-manager
           pkgs.pgcli
           pkgs.dbeaver-bin
+          pkgs.bat
 
           # herramientas de GO
           pkgs.go
