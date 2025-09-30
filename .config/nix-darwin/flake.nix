@@ -55,6 +55,8 @@
           "nvm"
           "gum"
           "typescript"
+          "pre-commit"
+          "bufbuild/buf/buf"
         ];
         casks = [
           "hammerspoon" # automate taks in macOS

@@ -72,11 +72,14 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
+# Duna packages
+export GOPRIVATE=github.com/DUNA-E-Commmerce/*
+
 # to sign commits with gpg
 export GPG_TTY=$TTY
 
 # PATH settings
-export GOPATH="$HOME/go"
+export GOPATH="$HOME/go/bin"
 export PATH=$GOPATH:$PATH
 export PATH=/run/current-system/sw/bin:$PATH #nix-darwing binaries
 
@@ -90,3 +93,5 @@ export NVM_DIR="$HOME/.config/nvm"
 
 # Scripts
 alias chawsp="source $HOME/chawsp.sh"
+alias chbranch="source $HOME/chbranch.sh"
+alias delbranch="source $HOME/delbranch.sh"
