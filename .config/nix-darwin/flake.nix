@@ -57,6 +57,7 @@
           "typescript"
           "pre-commit"
           "bufbuild/buf/buf"
+          "docker-credential-helper"
         ];
         casks = [
           "hammerspoon" # automate taks in macOS

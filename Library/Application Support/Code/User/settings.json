@@ -33,5 +33,6 @@
         }
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "git.blame.editorDecoration.enabled": false,
+    "git.blame.editorDecoration.enabled": true,
+    "githubLocalActions.dockerDesktopPath": "/Applications/Docker.app",
 }
